@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;  
+    background-color: #636363;
+    display: flex;
+    flex-direction: column;
+}
+
+/*CABEÇALHO*/
+
+header{
+    background-color: #83adca;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0px 8px 10px #0000001a;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+}
+
+nav a{
+    padding: 1rem;
+}
+
+/*TÍTULO E IMAGEM*/
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.imagem img{
+    width: 20%;
+}
+
+/*CARDS*/
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    box-sizing: border-box;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.card{
+    box-sizing: border-box;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.card h2{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.card img{
+    width: 70%;
+}
+
+.card p{
+    color: #fff;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+/*INFORMAÇÕES*/
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 5%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;  
+}
+
+.info h3{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center; 
+}
+
+.info-ip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info img{
+    width: 20%;
+}
+
+.info p{
+    color: #fff;
+    font-size: 1rem;
+    text-align: justify;
+    width: 40%;
+}
+
+/*MAPA*/
+
+.mapa{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.mapa iframe{
+    width: 350px; 
+    height: 200px;
+    border-radius: 1rem;
+}
+
+/*VÍDEO*/
+
+.video{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.video iframe{
+    width: 350px; 
+    height: 200px;
+    border-radius: 1rem;
+}
+
+/*RODAPÉ*/
+
+footer{
+    background-color: #2f2f2f;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
+footer p{
+    margin: 0.5rem;
+    font-size: 0.8rem;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 0.8rem;
+}
+
+footer a:hover{
+    color: #7da6ce;
+}
+
+footer i{
+    padding: 0 10px;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 768px) {
+    /*IMAGENS*/
+    .imagem {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .imagem img {
+        width: 60%;
+    }
+
+    /*CARDS*/
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .card {
+        width: 90%;
+    }
+
+    /*INFORMAÇÕES*/
+    .info-ip {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .info img {
+        width: 60%;
+    }
+    .info p {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    /*MAPA E VÍDEO*/
+    .mapa iframe,
+    .video iframe {
+        width: 90%;
+        height: 200px;
+    }
+}
